@@ -108,7 +108,8 @@ Exit:
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "postgresql://postgres:1234@localhost:5432/portfolio_db"
+DATABASE_URL = "postgresql://postgres:password@localhost:5432/portfolio_db"
+#Change password according to your local PostgreSQL setup.
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
